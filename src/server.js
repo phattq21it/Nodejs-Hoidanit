@@ -1,6 +1,7 @@
 import configViewEngine from "./configs/viewEngine";
 import initWebRoute from "./route/web";
 import express from "express";
+import connection from "./configs/connectDatabases";
 
 require("dotenv").config();
 const morgan = require("morgan");
