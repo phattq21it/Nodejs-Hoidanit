@@ -9,6 +9,13 @@ const port = process.env.PORT || 8080;
 // const path = require("path");
 const app = express();
 
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
+app.use(express.json());
+
 //setup view engine
 configViewEngine(app);
 
