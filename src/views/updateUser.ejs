@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/update-user" method="post" class="haha">
+      <div></div>
+      <div>
+        <label for="">Name</label>
+        <input type="text" name="name" value="<%=dataUserUp.name %>" />
+      </div>
+      <div>
+        <label for="">Address</label>
+        <input type="text" name="address" value="<%=dataUserUp.address %>" />
+      </div>
+      <div>
+        <label for="">age</label>
+        <input type="text" name="age" value=" <%=dataUserUp.age %>" />
+      </div>
+      <input type="hidden" name="id" value="<%=dataUserUp.id %>" />
+      <div>
+        <input type="submit" class="btn-submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
